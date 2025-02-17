@@ -23,4 +23,4 @@ def test_single_resource():
 def test_not_found_resource():
     response = httpx.get(base_url + not_found_resource)
     assert  response.status_code == 404
-    assert  response.json() == {} # проверка на пустой словарь
+    assert  response.json() == {} # проверка на пустой словарь.
